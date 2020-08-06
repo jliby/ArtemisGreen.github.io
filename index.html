@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <title>NCAS ARTEMIS GREEN TEAM</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +36,19 @@ p.thicker {
 
 </style>
 <body>
-
+    <script>
+        $(function(){
+          $('#ncas').hover(function(){
+              $(this).width(1.25*$(this).width());
+              $(this).height(1.25*$(this).height());
+      
+          }, function(){
+              $(this).width(0.8*$(this).width());
+              $(this).height(0.8*$(this).height());
+      
+          })
+      })
+    </script>
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
@@ -56,9 +69,10 @@ p.thicker {
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">We are NCAS' Artemis Green Team</span>
-  </div>
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small" id="ncas">
+        <a href="https://nasaostem.okstate.edu/"><img src="ncasimg.png" width="100" height="100"></a>
+      <span class="w3-tag">We are NCAS' Artemis Green Team</span>
+    </div>
   <div class="w3-display-middle w3-center">
     <span class="w3-text-white opacity-clear" style="font-size:90px">ARTEMIS<br>GREEN</span>
   </div>
@@ -144,7 +158,7 @@ p.thicker {
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
         <ul>
-      Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+     
         Visit  <a href="https://nasaostem.okstate.edu/" target="_blank" class="w3-hover-text-green">NCAS</a>
         Our<a href="https://twitter.com/NASA" target="_blank"> Twitter</a>
 
